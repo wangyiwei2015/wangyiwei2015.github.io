@@ -2,7 +2,8 @@
 <html lang="zh">
   <head>
     <title>
-        Leo&#39;s Blog</title>
+        使用 Home Assistant 集成米家 IoT 设备 - Leo&#39;s Blog
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -19,25 +20,29 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="本教程涉及的项目： Home Assistant HACS (HA Community Store) MIoT for HASS by ha0y MIoT for HASS by al-one Balena Etcher 目录 1. 安装 Home Assistant OS 2. 安装 HACS 3. 安装 MIoT 集成 4. 配置米家生态设备 1. 安装 Home Assistant OS 官方提供 4 种安装方式" />
     <meta name="generator" content="Hugo 0.97.2 with theme pure" />
-    <title>Leo&#39;s Blog</title>
+    <title>使用 Home Assistant 集成米家 IoT 设备 - Leo&#39;s Blog</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://wywblog.netlify.app/index.xml" title="Leo's Blog" />
     
     <link rel="stylesheet" href="https://wywblog.netlify.app/css/style.min.5840375875ff661947119669fb9fdca71d02fdf3b8df0526f46121dae18e572b.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="Leo&#39;s Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://wywblog.netlify.app/" />
+    <meta property="og:title" content="使用 Home Assistant 集成米家 IoT 设备" />
+<meta property="og:description" content="本教程涉及的项目： Home Assistant HACS (HA Community Store) MIoT for HASS by ha0y MIoT for HASS by al-one Balena Etcher 目录 1. 安装 Home Assistant OS 2. 安装 HACS 3. 安装 MIoT 集成 4. 配置米家生态设备 1. 安装 Home Assistant OS 官方提供 4 种安装方式" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wywblog.netlify.app/hass-miot/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-04-30T00:00:00+00:00" />
 
-<meta itemprop="name" content="Leo&#39;s Blog">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Leo&#39;s Blog"/>
-<meta name="twitter:description" content=""/>
+<meta itemprop="name" content="使用 Home Assistant 集成米家 IoT 设备">
+<meta itemprop="description" content="本教程涉及的项目： Home Assistant HACS (HA Community Store) MIoT for HASS by ha0y MIoT for HASS by al-one Balena Etcher 目录 1. 安装 Home Assistant OS 2. 安装 HACS 3. 安装 MIoT 集成 4. 配置米家生态设备 1. 安装 Home Assistant OS 官方提供 4 种安装方式"><meta itemprop="datePublished" content="2022-04-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-04-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="719">
+<meta itemprop="keywords" content="配置环境," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 Home Assistant 集成米家 IoT 设备"/>
+<meta name="twitter:description" content="本教程涉及的项目： Home Assistant HACS (HA Community Store) MIoT for HASS by ha0y MIoT for HASS by al-one Balena Etcher 目录 1. 安装 Home Assistant OS 2. 安装 HACS 3. 安装 MIoT 集成 4. 配置米家生态设备 1. 安装 Home Assistant OS 官方提供 4 种安装方式"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -205,20 +210,20 @@ function tagCloud(where, min, max) {
 
     
     
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
 
-<main class="main" role="main">
-  
-  <div class="content article-list">
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
     
-    
-    
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
+    <div class="article-header">
+      <h1 itemprop="name">
   <a
     class="article-title"
     href="/hass-miot/"
@@ -226,14 +231,11 @@ function tagCloud(where, min, max) {
   >
 </h1>
 
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        本教程涉及的项目： Home Assistant HACS (HA Community Store) MIoT for HASS by ha0y MIoT for HASS by al-one Balena Etcher 目录 1. 安装 Home Assistant OS 2. 安装 HACS 3. 安装 MIoT 集成 4. 配置米家生态设备 1. 安装 Home Assistant OS 官方提供 4 种安装方式
-      </div>
-      <p class="article-meta">
+      <div class="article-meta">
+        
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://wywblog.netlify.app/hass-miot/" class="">
+<a href="https://wywblog.netlify.app/hass-miot/" class="article-date">
   <time datetime="2022-04-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-04-30</time>
 </a>
 </span>
@@ -247,55 +249,103 @@ function tagCloud(where, min, max) {
   </span>
 
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/cn-mirrors/"
-    >常用国内加速站点</a
-  >
-</h1>
-
       </div>
-      <div class="article-entry text-muted" itemprop="description">
-        由于国内特殊网络环境，常常会遇到某些地址不可访问或速度缓慢；本页面整理了一些常用的替代站点。 目录：| GitHub | APT | PyPI | npm | RubyGems | Homebrew | Flutter | Maven | Docker | NTP |
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://wywblog.netlify.app/cn-mirrors/" class="">
-  <time datetime="2022-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-04-28</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/"> 教程 </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/"> 配置环境 </a>
-  </span>
-
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
-      </p>
-    </article></div>
-  
-<nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-    <ul class="pager pull-left">
-    </ul>
-    <div class="total-article bar-right">
-      Page:1/1
     </div>
-  </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>本教程涉及的项目：</p>
+<ul>
+<li><a href="https://www.home-assistant.io/">Home Assistant</a></li>
+<li><a href="https://hacs.xyz/">HACS</a> (HA Community Store)</li>
+<li><a href="https://github.com/ha0y/xiaomi_miot_raw">MIoT for HASS</a> by ha0y</li>
+<li><a href="https://github.com/al-one/hass-xiaomi-miot">MIoT for HASS</a> by al-one</li>
+<li><a href="https://www.balena.io/etcher">Balena Etcher</a></li>
+</ul>
+<h5 id="目录">目录</h5>
+<ul>
+<li><a href="#install-os">1. 安装 Home Assistant OS</a></li>
+<li><a href="#install-hacs">2. 安装 HACS</a></li>
+<li><a href="#install-miot">3. 安装 MIoT 集成</a></li>
+<li><a href="#config-miot">4. 配置米家生态设备</a></li>
+</ul>
+<h2 id="hahahugoshortcode-s1-hbhb"><div id="install-os"></div>
+</br></h2>
+<h3 id="1-安装-home-assistant-os">1. 安装 Home Assistant OS</h3>
+<p>官方提供 4 种安装方式，参考 <a href="https://www.home-assistant.io/installation">Installation</a> 。</p>
+<p>本文在 <code>树莓派</code> 上安装 <code>HAOS (64-bit)</code> 。</p>
+<h5 id="下载镜像">下载镜像</h5>
+<p>首先，从 <a href="https://github.com/home-assistant/operating-system/releases">官方仓库</a> 下载对应的系统镜像；例如 <code>树莓派 3</code> 就选择 <code>haos_rpi3-64-版本号.img.xz</code> 。</p>
+<p>若下载速度慢，请参考 <a href="../cn-mirrors#github">国内加速</a> 。</p>
+<h5 id="安装并配置">安装并配置</h5>
+<p>然后，用 <a href="https://www.balena.io/etcher">Etcher</a> 等工具将系统写入 SD 卡。</p>
+<p>完成之后挂载第一个 <code>FAT</code> 分区，修改默认 NTP ，具体方法参考 <a href="../cn-mirrors#ntp">HAOS 安装的坑</a> 。</p>
+<p>插上网线，开机。确认设备的 IP 地址：</p>
+<ul>
+<li>连接显示器，启动之后会显示本机 IP</li>
+<li>或者检查路由器刚刚连接的设备</li>
+</ul>
+<p>登录 <code>IP:8123</code> ，根据网页引导完成初始设置。注意，自动定位在国内可能无效，需要手动调整到正确地理位置。</p>
+<h2 id="hahahugoshortcode-s3-hbhb"><div id="install-hacs"></div>
+</br></h2>
+<h3 id="2-安装-hacs">2. 安装 HACS</h3>
+<h5 id="安装终端">安装终端</h5>
+<p>在 HASS 管理页面上，前往 <code>配置</code> -&gt; <code>加载项...</code> -&gt; <code>+ 加载项商店</code> -&gt; `` ，</p>
+<p>搜索并找到 <code>Terminal &amp; SSH</code> 。</p>
+<p>点击 <code>安装</code> 。</p>
+<p>安装完毕后，点击 <code>启动</code> 。</p>
+<p>启动完毕后，点击 <code>打开 WebUI</code> 。</p>
+<h5 id="安装-hacs">安装 HACS</h5>
+<p>根据 <a href="https://hacs.xyz/docs/setup/download">官方教程</a> ，在网页的终端中输入：</p>
+<pre><code class="language-bash">wget -O - https://get.hacs.xyz | bash -
+</code></pre>
+<font color=gray>注意不要遗漏任何字符</font>
+<p>其中 <code>https://get.hacs.xyz</code> 可用 <code>https://raw.githubusercontent.com/hacs/get/main/get</code> 代替。</p>
+<p>等待安装自动完成，如有报错则先解决报错；在 clean install 的情况下，一般多为网络问题。</p>
+<h5 id="重启-hass">重启 HASS</h5>
+<p>重新启动 <code>Home Assistant</code> 。</p>
+<p>在 HASS 管理页面上，前往 <code>配置</code> -&gt; <code>集成</code> ，清空浏览器缓存 <code>Ctrl + F5</code> 。</p>
+<p>添加集成，找到 <code>HACS</code> ；根据网页引导完成初始配置、关联 <code>GitHub</code> 账号。</p>
+<h2 id="hahahugoshortcode-s6-hbhb"><div id="install-miot"></div>
+</br></h2>
+<h3 id="3-安装-miot-集成">3. 安装 MIoT 集成</h3>
+<p>前往 <code>HACS</code> -&gt; <code>添加 Repo</code> ，找到 <code>xiaomi_miot_raw</code> 或者 <code>hass-xiaomi-miot</code> （二选一）安装。</p>
+<h2 id="hahahugoshortcode-s8-hbhb"><div id="config-miot"></div>
+</br></h2>
+<h3 id="4-配置米家生态设备">4. 配置米家生态设备</h3>
+<p>根据提示绑定小米账号，添加设备后可远程控制。</p>
+<p>注：旧方法的局域网 API Key 现在难以获取。</p>
+<h2 id="hahahugoshortcode-s9-hbhb"></br></h2>
+<h3 id="5-已知问题-2022-05">5. 已知问题 2022-05</h3>
+<ul>
+<li>建议使用大内存设备。树莓派 3 的 1GB 内存会使得 HASS 不稳定，运行一段时间后会被 kill ，此时插拔电源重启。</li>
+<li>有时启动后网页会 500 ，此时插拔电源重启。</li>
+<li>少数情况下，重启无法解决问题，此时多重启几次。</li>
+</ul>
+<p>可以关注 <a href="https://github.com/home-assistant/operating-system/issues">issues</a> ，来查看目前版本的问题、跟踪修复进度。</p>
+<h2 id="hahahugoshortcode-s10-hbhb"></br></h2>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      本文链接: 
+      <a href="https://wywblog.netlify.app/hass-miot/" title="使用 Home Assistant 集成米家 IoT 设备" target="_blank" rel="external">https://wywblog.netlify.app/hass-miot/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>未经授权禁止转载</strong>
+      
+    </li>
+  </ul>
+</blockquote>
+
+
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    
 </nav>
+
 
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
@@ -376,6 +426,7 @@ function tagCloud(where, min, max) {
         hasInnerContainers: true,
     });
 </script>
+
 
   </body>
 </html>

@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Leo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>(C)WYW</copyright>
-    <lastBuildDate>Thu, 28 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://wywblog.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>使用 Home Assistant 集成米家 IoT 设备</title>
+      <link>https://wywblog.netlify.app/hass-miot/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wywblog.netlify.app/hass-miot/</guid>
+      <description>本教程涉及的项目： Home Assistant HACS (HA Community Store) MIoT for HASS by ha0y MIoT for HASS by al-one Balena Etcher 目录 1. 安装 Home Assistant OS 2. 安装 HACS 3. 安装 MIoT 集成 4. 配置米家生态设备 1. 安装 Home Assistant OS 官方提供 4 种安装方式</description>
+    </item>
     
     <item>
       <title>常用国内加速站点</title>
