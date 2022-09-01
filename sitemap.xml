@@ -4,41 +4,76 @@
   
   <url>
     <loc>https://wywblog.netlify.app/categories/</loc>
-    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://wywblog.netlify.app/</loc>
-    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://wywblog.netlify.app/posts/</loc>
-    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://wywblog.netlify.app/tags/</loc>
+    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://wywblog.netlify.app/categories/windows/</loc>
+    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://wywblog.netlify.app/eject-fail/</loc>
+    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://wywblog.netlify.app/tags/%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://wywblog.netlify.app/ios-exit-animated/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://wywblog.netlify.app/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://wywblog.netlify.app/ios-bundleid-assert/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://wywblog.netlify.app/tags/%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/</loc>
+    <loc>https://wywblog.netlify.app/categories/iot/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://wywblog.netlify.app/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -47,6 +82,13 @@
   <url>
     <loc>https://wywblog.netlify.app/hass-miot/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://wywblog.netlify.app/categories/misc/</loc>
+    <lastmod>2022-04-28T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -67,6 +109,12 @@
   
   <url>
     <loc>https://wywblog.netlify.app/tags/index/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://wywblog.netlify.app/categories/ios/swift/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

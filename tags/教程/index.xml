@@ -2,14 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>教程 on Leo&#39;s Blog</title>
-    <link>https://wywblog.netlify.app/categories/%E6%95%99%E7%A8%8B/</link>
+    <link>https://wywblog.netlify.app/tags/%E6%95%99%E7%A8%8B/</link>
     <description>Recent content in 教程 on Leo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>(C)WYW</copyright>
     <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://wywblog.netlify.app/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://wywblog.netlify.app/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows 弹出 USB 设备失败时的处理</title>
+      <link>https://wywblog.netlify.app/eject-fail/</link>
+      <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wywblog.netlify.app/eject-fail/</guid>
+      <description>在 Windows 中弹出 USB 存储设备时，可能会遇到 该设备正在使用中，请关闭可能使用该设备的所有程序或窗口 。 此时，有两种方法检查占用磁盘的程序或进程。 资源监视</description>
+    </item>
+    
+    <item>
+      <title>iOS 返回主屏幕的动画</title>
+      <link>https://wywblog.netlify.app/ios-exit-animated/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wywblog.netlify.app/ios-exit-animated/</guid>
+      <description>直接退出 exit(code) // code is your exit code 有动画，优雅地退出 UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) exit(code) // code is your exit code 挂起（后台运行） UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) 注： abort() 不会进行 cleanup 操作。</description>
+    </item>
+    
+    <item>
+      <title>iOS 应用简单防止重签名的方法</title>
+      <link>https://wywblog.netlify.app/ios-bundleid-assert/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wywblog.netlify.app/ios-bundleid-assert/</guid>
+      <description>注意：只有在涉及安全/隐私等关键模块使用；考虑到 iOS 的封闭生态，通常情况下建议给用户保留重签名的机会。 guard Bundle.main.bundleIdentifier == &amp;quot;the real bundle id&amp;quot; else { // do sth return }</description>
+    </item>
     
     <item>
       <title>使用 Home Assistant 集成米家 IoT 设备</title>

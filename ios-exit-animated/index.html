@@ -2,7 +2,8 @@
 <html lang="zh">
   <head>
     <title>
-        Leo&#39;s Blog</title>
+        iOS 返回主屏幕的动画 - Leo&#39;s Blog
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -19,25 +20,29 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="直接退出 exit(code) // code is your exit code 有动画，优雅地退出 UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) exit(code) // code is your exit code 挂起（后台运行） UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) 注： abort() 不会进行 cleanup 操作。" />
     <meta name="generator" content="Hugo 0.102.2 with theme pure" />
-    <title>Leo&#39;s Blog</title>
+    <title>iOS 返回主屏幕的动画 - Leo&#39;s Blog</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://wywblog.netlify.app/index.xml" title="Leo's Blog" />
     
     <link rel="stylesheet" href="https://wywblog.netlify.app/css/style.min.e8860c74150f23f6526c1369094565855b37444564576e272acfcd378a510275.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="Leo&#39;s Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://wywblog.netlify.app/" />
+    <meta property="og:title" content="iOS 返回主屏幕的动画" />
+<meta property="og:description" content="直接退出 exit(code) // code is your exit code 有动画，优雅地退出 UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) exit(code) // code is your exit code 挂起（后台运行） UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) 注： abort() 不会进行 cleanup 操作。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wywblog.netlify.app/ios-exit-animated/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-04-30T00:00:00+00:00" />
 
-<meta itemprop="name" content="Leo&#39;s Blog">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Leo&#39;s Blog"/>
-<meta name="twitter:description" content=""/>
+<meta itemprop="name" content="iOS 返回主屏幕的动画">
+<meta itemprop="description" content="直接退出 exit(code) // code is your exit code 有动画，优雅地退出 UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) exit(code) // code is your exit code 挂起（后台运行） UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) 注： abort() 不会进行 cleanup 操作。"><meta itemprop="datePublished" content="2022-04-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-04-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="48">
+<meta itemprop="keywords" content="技巧," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="iOS 返回主屏幕的动画"/>
+<meta name="twitter:description" content="直接退出 exit(code) // code is your exit code 有动画，优雅地退出 UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) exit(code) // code is your exit code 挂起（后台运行） UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) 注： abort() 不会进行 cleanup 操作。"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -216,57 +221,20 @@ function tagCloud(where, min, max) {
 
     
     
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
 
-<main class="main" role="main">
-  
-  <div class="content article-list">
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
     
-    
-    
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-date"
-    href="/eject-fail/"
-    >Windows 弹出 USB 设备失败时的处理</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        在 Windows 中弹出 USB 存储设备时，可能会遇到 该设备正在使用中，请关闭可能使用该设备的所有程序或窗口 。 此时，有两种方法检查占用磁盘的程序或进程。 资源监视
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://wywblog.netlify.app/eject-fail/" class="">
-  <time datetime="2022-05-19 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-05-19</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/windows/"> Windows </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/%E6%8A%80%E5%B7%A7/"> 技巧 </a>
-  </span>
-
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
+    <div class="article-header">
+      <h1 itemprop="name">
   <a
     class="article-title"
     href="/ios-exit-animated/"
@@ -274,11 +242,8 @@ function tagCloud(where, min, max) {
   >
 </h1>
 
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        直接退出 exit(code) // code is your exit code 有动画，优雅地退出 UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) exit(code) // code is your exit code 挂起（后台运行） UIApplication.shared.perform(#selector(NSXPCConnection.suspend)) 注： abort() 不会进行 cleanup 操作。
-      </div>
-      <p class="article-meta">
+      <div class="article-meta">
+        
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
 <a href="https://wywblog.netlify.app/ios-exit-animated/" class="">
@@ -295,129 +260,45 @@ function tagCloud(where, min, max) {
   </span>
 
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/ios-bundleid-assert/"
-    >iOS 应用简单防止重签名的方法</a
-  >
-</h1>
-
       </div>
-      <div class="article-entry text-muted" itemprop="description">
-        注意：只有在涉及安全/隐私等关键模块使用；考虑到 iOS 的封闭生态，通常情况下建议给用户保留重签名的机会。 guard Bundle.main.bundleIdentifier == &quot;the real bundle id&quot; else { // do sth return }
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://wywblog.netlify.app/ios-bundleid-assert/" class="">
-  <time datetime="2022-04-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-04-30</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/ios/swift/"> iOS/Swift </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/%E6%8A%80%E5%B7%A7/"> 技巧 </a>
-  </span>
-
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/hass-miot/"
-    >使用 Home Assistant 集成米家 IoT 设备</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        本教程涉及的项目： Home Assistant HACS (HA Community Store) MIoT for HASS by ha0y MIoT for HASS by al-one Balena Etcher 目录 1. 安装 Home Assistant OS 2. 安装 HACS 3. 安装 MIoT 集成 4. 配置米家生态设备 1. 安装 Home Assistant OS 官方提供 4 种安装方式
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://wywblog.netlify.app/hass-miot/" class="">
-  <time datetime="2022-04-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-04-30</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/iot/"> IoT </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/%E6%95%99%E7%A8%8B/"> 教程 </a>
-  </span>
-
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/cn-mirrors/"
-    >常用国内加速站点</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        由于国内特殊网络环境，常常会遇到某些地址不可访问或速度缓慢；本页面整理了一些常用的替代站点。 目录：| GitHub | APT | PyPI | npm | RubyGems | Homebrew | Flutter | Maven | Docker | NTP |
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://wywblog.netlify.app/cn-mirrors/" class="">
-  <time datetime="2022-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-04-28</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/misc/"> Misc </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/%E6%95%99%E7%A8%8B/"> 教程 </a>
-  </span>
-
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
-      </p>
-    </article></div>
-  
-<nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-    <ul class="pager pull-left">
-    </ul>
-    <div class="total-article bar-right">
-      Page:1/1
     </div>
-  </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h4 id="直接退出">直接退出</h4>
+<pre><code class="language-swift">exit(code) // code is your exit code
+</code></pre>
+<h4 id="有动画优雅地退出">有动画，优雅地退出</h4>
+<pre><code class="language-swift">UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+exit(code) // code is your exit code
+</code></pre>
+<h4 id="挂起后台运行">挂起（后台运行）</h4>
+<pre><code class="language-swift">UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+</code></pre>
+</br>
+<p>注： <code>abort()</code> 不会进行 cleanup 操作。</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      本文链接: 
+      <a href="https://wywblog.netlify.app/ios-exit-animated/" title="iOS 返回主屏幕的动画" target="_blank" rel="external">https://wywblog.netlify.app/ios-exit-animated/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>未经授权禁止转载</strong>
+      
+    </li>
+  </ul>
+</blockquote>
+
+
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    
 </nav>
+
 
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
@@ -498,6 +379,7 @@ function tagCloud(where, min, max) {
         hasInnerContainers: true,
     });
 </script>
+
 
   </body>
 </html>
